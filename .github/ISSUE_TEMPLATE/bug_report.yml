@@ -1,0 +1,136 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with the Minecraft Server Monitor Bot
+title: '[Bug]: '
+labels: ['bug', 'needs-triage']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us understand and reproduce the issue.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed the following steps
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have read the documentation and troubleshooting guide
+          required: true
+        - label: I am using the latest version of the bot
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Use command '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen
+      placeholder: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: A clear and concise description of what actually happened
+      placeholder: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Drag and drop screenshots here or paste them
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: What operating system are you running the bot on?
+      options:
+        - Windows
+        - macOS
+        - Linux (Ubuntu)
+        - Linux (Other)
+        - Docker
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js Version
+      description: What version of Node.js are you using?
+      placeholder: e.g., v18.17.0
+    validations:
+      required: true
+
+  - type: input
+    id: bot-version
+    attributes:
+      label: Bot Version
+      description: What version of the bot are you using?
+      placeholder: e.g., v1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuration
+      description: Please share your configuration (remove sensitive information like tokens)
+      placeholder: |
+        {
+          "server": {
+            "name": "My Server",
+            "host": "example.com",
+            "port": 25565
+          },
+          "monitoring": {
+            "channelId": "CHANNEL_ID",
+            "interval": 300000,
+            "enabled": true
+          }
+        }
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Logs
+      description: Please include any relevant console logs or error messages
+      placeholder: Paste console output here...
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: Any additional information that might be helpful... 
