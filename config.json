@@ -1,0 +1,25 @@
+{
+    "server": {
+        "name": "My Minecraft Server",
+        "host": "your-server-ip.com",
+        "port": 25565
+    },
+    "monitoring": {
+        "channelId": "YOUR_CHANNEL_ID_HERE",
+        "interval": 300000,
+        "enabled": true,
+        "updateOnStatusChange": true,
+        "updateOnPlayerChange": false
+    },
+    "embedColors": {
+        "online": "#00ff00",
+        "offline": "#ff0000",
+        "restarting": "#ffaa00",
+        "unknown": "#808080"
+    },
+    "discord": {
+        "maxMessagesPerMinute": 5,
+        "cooldownBetweenUpdates": 60000
+    },
+    "timeoutDuration": 10000
+} 
