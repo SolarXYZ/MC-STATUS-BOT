@@ -1,0 +1,64 @@
+{
+  "name": "minecraft-server-monitor",
+  "version": "1.0.0",
+  "description": "A powerful Discord bot that monitors a single Minecraft server and provides detailed real-time status updates with Discord rate limiting compliance.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"No linter configured\"",
+    "setup": "node -e \"console.log('Please copy .env.example to .env and configure your settings')\""
+  },
+  "keywords": [
+    "discord",
+    "bot", 
+    "minecraft",
+    "server",
+    "status",
+    "monitoring",
+    "discord.js",
+    "real-time",
+    "gaming"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://github.com/your-username"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/minecraft-server-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/minecraft-server-monitor/issues"
+  },
+  "homepage": "https://github.com/your-username/minecraft-server-monitor#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "minecraft-server-util": "^5.4.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "files": [
+    "bot.js",
+    "commands/",
+    "config.json",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ]
+} 
